@@ -15,7 +15,7 @@
         <p>
 
             <?php
-            $n = $_GET["num"]  ?? 0;
+            $n = $_REQUEST["num"]  ?? 0;
             $a = $n - 1;
             $s = $n + 1;
             echo "O número escolhido foi <strong>$n</strong>";
