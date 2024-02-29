@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antecessor e Sucessor</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="index.html">
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 
@@ -13,19 +14,15 @@
     <main>
         <h1>Este é o resultado:</h1>
         <p>
-
             <?php
-            $n = $_REQUEST["num"]  ?? 0;
+            $n = $_REQUEST["num"];
             $a = $n - 1;
             $s = $n + 1;
             echo "O número escolhido foi <strong>$n</strong>";
             echo "<br>O seu antecessor é <strong>$a</strong>";
             echo "<br>O seu sucessor é <strong>$s</strong>";
-
-
             ?>
         </p>
-        <!-- <button onclick="javascript:history.go(-1)">Voltar</button> -->
     </main>
 
 </body>
